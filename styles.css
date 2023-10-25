@@ -101,7 +101,7 @@ body {
     }
 
     #Contents {
-        width: 90%; /* 가로 사이즈를 800px로 설정 */
+        width: 98%; /* 가로 사이즈를 800px로 설정 */
         font-size: 12px;
         resize: none;
         height: 50px;
