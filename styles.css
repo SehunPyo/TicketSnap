@@ -12,6 +12,12 @@ body {
     background-color: aliceblue;
 }
 
+.image{
+    position: absolute;
+    top: -10px;
+    width: 300px;
+}
+
 @keyframes rainbow {
     0% { color: rgb(234, 57, 57); }
     14% { color: rgb(255, 203, 105); }
@@ -88,6 +94,12 @@ body {
         overflow-y: hidden;
         overflow-x: hidden;
         background-color: rgb(234, 219, 247);
+    }
+
+    .image{
+        position: absolute;
+        top: 1px;
+        width: 250px;
     }
 
     .title-text {
