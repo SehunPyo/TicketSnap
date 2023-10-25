@@ -96,13 +96,13 @@ body {
     }
 
     .subText{
-        font-size: 11px;
+        font-size: 12px;
         color: gray;
     }
 
     #Contents {
-        width: 100vw; /* 가로 사이즈를 800px로 설정 */
-        font-size: 11px;
+        width: 90%; /* 가로 사이즈를 800px로 설정 */
+        font-size: 12px;
         resize: none;
         color: rgb(169, 44, 86);
         background-color: rgb(234, 219, 247);
@@ -115,6 +115,7 @@ body {
         border-radius: 10px;
         display: flex;
         align-items: center;
+        font-size: 12px;
     }
 
     #adminCode {
