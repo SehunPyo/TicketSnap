@@ -35,27 +35,6 @@ const contents = [
                 , '김밥 재료를 사고 김밥을 말아서 갑자기 생각나는 사람과 함께 벤치에 앉아서 먹는 날'
                   ];
 
-// function generateFortune() {
-//     var storedFortune = localStorage.getItem("todayFortune");
-//     var currentState = localStorage.getItem("stateCD");
-//     var displayFortune;
-
-//     // 처음 호출될 때, localStorage에 저장된 오늘의 버킷 값이 없을 경우
-//     if (!storedFortune) {
-//         const randomIndex = Math.floor(Math.random() * contents.length);
-//         displayFortune = contents[randomIndex];
-//         localStorage.setItem("todayFortune", displayFortune);
-//     } else {
-//         displayFortune = storedFortune;
-//     }
-
-//     if (currentState === "1") {
-//         document.getElementById('Contents').value = "오늘의 버킷을 이미 획득했습니다." + "\n" + "오늘 획득한 버킷 : " + '"' + displayFortune + '"'; 
-//     } else {
-//         document.getElementById('Contents').value = displayFortune;
-//         localStorage.setItem("stateCD", "1");
-//     }
-// }
 
 
 let adminModeActive = false;
@@ -107,3 +86,18 @@ function generateFortune() {
     }
 }
 
+
+// 로컬 스토리지를 초기화하는 함수
+function clearLocalStorageAtMidnight() {
+    const now = new Date();
+    const then = new Date(now);
+    then.setHours(24, 0, 0, 0); // 다음날 0시 0분 0초를 설정
+    const timeToMidnight = then.getTime() - now.getTime(); // 0시까지 남은 시간 계산
+
+    setTimeout(function() {
+        localStorage.clear(); // 로컬 스토리지 초기화
+        clearLocalStorageAtMidnight(); // 다음날 0시를 위해 재귀 호출
+    }, timeToMidnight);
+}
+
+clearLocalStorageAtMidnight(); // 초기 로드 시 함수 실행

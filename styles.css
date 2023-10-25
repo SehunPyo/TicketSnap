@@ -9,6 +9,7 @@ body {
     justify-content: center;
     overflow-y: hidden;
     overflow-x: hidden;
+    background-color: aliceblue;
 }
 
 @keyframes rainbow {
@@ -23,17 +24,14 @@ body {
 }
 
 .title-text {
-    animation: rainbow 8s linear infinite;
+    font-size: 22px;
+    animation: rainbow 5s linear infinite;
 }
 
 .subText{
     font-size: 13px;
     color: gray;
 }
-
-
-
-
 
 .centered {
     display: flex;
@@ -52,6 +50,7 @@ body {
     font-size: 13px;
     display: flex;
     align-items: center;
+    background-color: aliceblue;
 }
 
 #CreateText{
@@ -69,6 +68,61 @@ body {
     left: 10px;
     border: 0px;
     color: rgb(69, 96, 203);
+    background-color: aliceblue;
 }
 
 
+
+
+/* 기존 CSS 내용 아래에 추가 */
+@media (max-width: 768px) { /* 768px 이하의 화면에서는 모바일로 가정 */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-color: rgb(234, 219, 247);
+    }
+
+    .title-text {
+        font-size: 17px;
+        animation: rainbow 5s linear infinite;
+    }
+
+    .subText{
+        font-size: 11px;
+        color: gray;
+    }
+
+    #Contents {
+        width: 100vw; /* 가로 사이즈를 800px로 설정 */
+        font-size: 11px;
+        resize: none;
+        color: rgb(169, 44, 86);
+        background-color: rgb(234, 219, 247);
+    }
+
+    #CreateText{
+        background-color: rgb(244, 247, 219);
+        margin-top:  20px;
+        height: 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    #adminCode {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 0px;
+        color: rgb(184, 183, 185);
+        background-color: rgb(234, 219, 247);
+    }
+}
