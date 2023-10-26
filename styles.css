@@ -111,8 +111,10 @@ body {
         justify-content: center;
         overflow-y: hidden;
         overflow-x: hidden;
-        background-color: rgb(234, 219, 247);
-    }
+        background-image: url(Source/mobile_bg01.png);
+        background-size: cover;
+        background-repeat: no-repeat;  
+    } 
 
     .image{
         position: absolute;
@@ -131,8 +133,8 @@ body {
     }
 
     #Contents {
-        width: 85%;
-        height: 40px;
+        width: 95%;
+        height: 20px;
         font-size: 12px;
         resize: none;
         color: rgb(255, 255, 255);
@@ -146,8 +148,8 @@ body {
 
     #SubContents{
         text-align: center;
-        width: 85%;
-        height: 50px;
+        width: 95%;
+        height: 30px;
         color: rgb(128, 28, 145);
         border: 1px violet;
         font-size: 13px;
