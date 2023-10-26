@@ -77,7 +77,8 @@ function generateFortune() {
     }
 
     if (!adminModeActive && currentState === "1") {
-        document.getElementById('Contents').value = "오늘의 버킷을 이미 획득했습니다." + "\n" + "오늘 획득한 버킷 : " + '"' + displayFortune + '"'; 
+        document.getElementById('Contents').value = "오늘의 버킷을 이미 획득했습니다."
+        document.getElementById('SubContents').value = "오늘 획득한 버킷 : " + '"' + displayFortune + '"'; 
     } else {
         document.getElementById('Contents').value = displayFortune;
         if (!adminModeActive) {

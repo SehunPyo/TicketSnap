@@ -9,12 +9,12 @@ body {
     justify-content: center;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: aliceblue;
+    background-color: rgb(255, 233, 111);
 }
 
 .image{
     position: absolute;
-    top: -10px;
+    top: 50px;
     width: 300px;
 }
 
@@ -50,13 +50,30 @@ body {
 #Contents{
     text-align: center;
     width: 1500px;
+    color: rgb(255, 255, 255);
+    border: 2px violet;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 233, 111);
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#SubContents{
+    text-align: center;
+    width: 1500px;
     height: 30px;
-    color: rgb(252, 172, 93);
+    color: rgb(205, 103, 0);
     border: 1px violet;
     font-size: 13px;
     display: flex;
     align-items: center;
-    background-color: aliceblue;
+    background-color: rgb(255, 233, 111);
+    margin-top: 15px;
 }
 
 #CreateText{
@@ -74,7 +91,7 @@ body {
     left: 10px;
     border: 0px;
     color: rgb(69, 96, 203);
-    background-color: aliceblue;
+    background-color: rgb(255, 233, 111);
 }
 
 
@@ -98,7 +115,7 @@ body {
 
     .image{
         position: absolute;
-        top: 1px;
+        margin-top: 50px;
         width: 250px;
     }
 
@@ -116,8 +133,24 @@ body {
         width: 98vw; /* 가로 사이즈를 800px로 설정 */
         font-size: 12px;
         resize: none;
-        height: 50px;
-        color: rgb(169, 44, 86);
+        color: rgb(255, 255, 255);
+        background-color: rgb(234, 219, 247);
+        text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+
+    #SubContents{
+        text-align: center;
+        width: 1500px;
+        height: 30px;
+        color: rgb(128, 28, 145);
+        border: 1px violet;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
         background-color: rgb(234, 219, 247);
     }
 
@@ -140,3 +173,6 @@ body {
         background-color: rgb(234, 219, 247);
     }
 }
+
+
+
