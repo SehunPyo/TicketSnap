@@ -17,11 +17,6 @@ const contents = [
                 , '아무나 사람 두명 이상을 모아 함께 저녁을 먹는 날'
                 , '편의점에서 가장 비싼 초콜렛을 사먹는 날'
                 , '간식으로 계란 두개 이상과 캔사이다를 마시는 날'
-                , '"등" 하는 날'
-                , '"이두" 하는 날'
-                , '"삼두" 하는 날'
-                , '"엉덩이" 하는 날'
-                , '"허벅지" 하는 날'
                 , '플레이 리스트에서 자주 듣는 음악을 제외하고 모두 정리하는 날'
                 , '가장 가까운 시장에 방문해서 가장 맛있어 보이는 시장음식 포장해서 집에 가는 날'
                 , '휴대폰에서 안쓰는 어플 정리하는 날'
@@ -33,6 +28,9 @@ const contents = [
                 , '직장 동료 또는 가장 활발한 단톡방 멤버들에게 커피쏘는 날'
                 , '주말에 같이 찜질방 갈 사람 찾아보는 날 (없으면 혼자서라도 가야함)'
                 , '김밥 재료를 사고 김밥을 말아서 갑자기 생각나는 사람과 함께 벤치에 앉아서 먹는 날'
+                , '생필품을 체크하고 주문하는 날'
+                , '가벼운 꽃 한 송이를 사서 아무에게나 무심하게 선물하는 날'
+                , '편의점에서 가장 비싼 초코우유를 사먹는 날'
                   ];
 
 
@@ -77,8 +75,8 @@ function generateFortune() {
     }
 
     if (!adminModeActive && currentState === "1") {
-        document.getElementById('Contents').value = "오늘의 버킷을 이미 획득했습니다."
-        document.getElementById('SubContents').value = "오늘 획득한 버킷 : " + '"' + displayFortune + '"'; 
+        document.getElementById('Contents').value = "이미 투데이 버킷을 만들었어요!"
+        document.getElementById('SubContents').value = "[ ▼ 오늘 획득한 버킷 ▼ ]" + "\n" + '"' + displayFortune + '"'; 
     } else {
         document.getElementById('Contents').value = displayFortune;
         if (!adminModeActive) {
