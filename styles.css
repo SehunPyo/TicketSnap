@@ -70,6 +70,7 @@ body {
     color: rgb(205, 103, 0);
     border: 1px violet;
     font-size: 13px;
+    resize: none;
     display: flex;
     align-items: center;
     background-color: rgb(255, 233, 111);
@@ -149,6 +150,7 @@ body {
         color: rgb(128, 28, 145);
         border: 1px violet;
         font-size: 13px;
+        resize: none;
         display: flex;
         align-items: center;
         background-color: rgb(234, 219, 247);
