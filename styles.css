@@ -131,7 +131,8 @@ body {
     }
 
     #Contents {
-        width: 98vw; /* 가로 사이즈를 800px로 설정 */
+        width: 85%;
+        height: 40px;
         font-size: 12px;
         resize: none;
         color: rgb(255, 255, 255);
