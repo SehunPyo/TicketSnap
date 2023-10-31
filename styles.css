@@ -9,7 +9,7 @@ body {
     justify-content: center;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: rgb(255, 233, 111);
+    background-color: rgb(252, 239, 164);
 }
 
 .image{
@@ -50,17 +50,17 @@ body {
 #Contents{
     text-align: center;
     width: 1500px;
-    color: rgb(255, 255, 255);
+    color: rgb(46, 46, 46);
     border: 2px violet;
     font-size: 13px;
     display: flex;
     align-items: center;
-    background-color: rgb(255, 233, 111);
-    text-shadow: 
+    background-color: rgb(252, 239, 164);
+    /* text-shadow: 
         -1px -1px 0 #000,  
         1px -1px 0 #000,
         -1px 1px 0 #000,
-        1px 1px 0 #000;
+        1px 1px 0 #000; */
 }
 
 #SubContents{
@@ -73,7 +73,7 @@ body {
     resize: none;
     display: flex;
     align-items: center;
-    background-color: rgb(255, 233, 111);
+    background-color: rgb(252, 239, 164);
     margin-top: 15px;
 }
 
@@ -92,7 +92,7 @@ body {
     left: 10px;
     border: 0px;
     color: rgb(69, 96, 203);
-    background-color: rgb(255, 233, 111);
+    background-color: rgb(252, 239, 164);
 }
 
 
@@ -111,7 +111,8 @@ body {
         justify-content: center;
         overflow-y: hidden;
         overflow-x: hidden;
-        background-image: url(Source/mobile_bg01.png);
+        /* background-image: url(Source/mobile_bg01.png); */
+        background-color: black;
         background-size: cover;
         background-repeat: no-repeat;  
     } 
@@ -138,7 +139,7 @@ body {
         font-size: 12px;
         resize: none;
         color: rgb(255, 255, 255);
-        background-color: rgb(234, 219, 247);
+        background-color: black;
         text-shadow: 
         -1px -1px 0 #000,  
         1px -1px 0 #000,
@@ -149,14 +150,14 @@ body {
     #SubContents{
         text-align: center;
         width: 95%;
-        height: 30px;
-        color: rgb(128, 28, 145);
+        height: 45px;
+        color: rgb(196, 196, 196);
         border: 1px violet;
         font-size: 13px;
         resize: none;
         display: flex;
         align-items: center;
-        background-color: rgb(234, 219, 247);
+        background-color: rgb(0, 0, 0);
     }
 
     #CreateText{
@@ -175,7 +176,7 @@ body {
         left: 10px;
         border: 0px;
         color: rgb(184, 183, 185);
-        background-color: rgb(234, 219, 247);
+        background-color: black;
     }
 }
 
